@@ -1,0 +1,236 @@
+# Placement Prediction using Machine Learning
+
+## Overview
+
+This project predicts whether a student will be placed based on academic and aptitude-related features using Machine Learning.
+
+The system trains a classification model on historical student data and predicts placement outcomes for new students.
+
+---
+
+## Problem Statement
+
+Campus placement is an important factor for students and institutions.
+
+The objective of this project is to analyze student attributes and build a machine learning model capable of predicting placement status.
+
+---
+
+## Dataset
+
+### Placement Dataset
+
+Features:
+
+* City
+* CGPA
+* IQ
+* Placement Status
+
+Target Variable:
+
+* Placement
+
+  * 1 = Placed
+  * 0 = Not Placed
+
+### Study Hours Dataset
+
+Features:
+
+* Study Hours
+* Score
+
+Used for learning and experimentation with Linear Regression.
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-Learn
+* Joblib
+* VS Code
+
+---
+
+## Machine Learning Model
+
+### Logistic Regression
+
+Used for placement prediction.
+
+Why Logistic Regression?
+
+* Suitable for binary classification
+* Fast training
+* Easy interpretation
+* Good baseline performance
+
+---
+
+## Project Workflow
+
+### Step 1: Data Loading
+
+The placement dataset is loaded using Pandas.
+
+### Step 2: Data Preprocessing
+
+* Handle missing values
+* Encode categorical values
+* Prepare features and target
+
+### Step 3: Model Training
+
+The Logistic Regression model is trained using:
+
+* CGPA
+* IQ
+* City
+
+### Step 4: Model Evaluation
+
+Performance is evaluated using:
+
+* Accuracy Score
+* Classification Report
+
+### Step 5: Model Saving
+
+The trained model is stored as:
+
+placement_model.pkl
+
+### Step 6: Prediction
+
+Users can enter:
+
+* City
+* CGPA
+* IQ
+
+The system predicts:
+
+* Placed
+* Not Placed
+
+---
+
+## Visualizations
+
+The project includes the following visualizations:
+
+### 1. Placement Distribution Pie Chart
+
+Shows the proportion of placed and non-placed students.
+
+### 2. CGPA-wise Placement Bar Chart
+
+Shows placements across CGPA ranges.
+
+### 3. City-wise Placement Bar Chart
+
+Shows placement counts by city.
+
+### 4. Correlation Heatmap
+
+Displays relationships between:
+
+* CGPA
+* IQ
+* Placement
+
+---
+
+## Files Description
+
+### train.py
+
+* Trains the machine learning model
+* Saves model as placement_model.pkl
+
+### predict.py
+
+* Loads trained model
+* Predicts placement status
+
+### explore.py
+
+* Generates visualizations
+* Performs exploratory data analysis
+
+### placement_model.pkl
+
+* Saved trained model
+
+---
+
+## Installation
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run Project
+
+Train Model:
+
+```bash
+python train.py
+```
+
+Predict Placement:
+
+```bash
+python predict.py
+```
+
+Generate Visualizations:
+
+```bash
+python explore.py
+```
+
+---
+
+## Sample Prediction
+
+Input:
+
+City: New York
+
+CGPA: 8.5
+
+IQ: 130
+
+Output:
+
+Placed
+
+---
+
+## Future Enhancements
+
+* Random Forest Classifier
+* Decision Tree Classifier
+* KNN Classifier
+* Model Comparison Dashboard
+* Streamlit Web Application
+* Placement Probability Prediction
+* Advanced Feature Engineering
+
+---
+
+## Author
+
+Subiksha Thangavel
+
+B.Tech Artificial Intelligence and Data Science
